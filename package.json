@@ -1,16 +1,22 @@
 {
   "name": "img-uploader",
+  "private": false,
   "version": "1.0.0",
   "description": "Image type inputer or uploader",
   "type": "module",
-  "types": "types/index.d.ts",
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ],
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -wc",
     "lint": "eslint --ext \"**/*.{js,jsx,ts,tsx}\" --ignore-path .gitignore .",
     "prettier": "prettier --write \"**/*.{js,jsx,json}\"",
     "clean": "rm -rf .parcel-cache && pnpm -r run clean",
-    "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -u -s"
+    "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -u -s",
+    "vue": "pnpm -r --parallel --filter=./playground/vue run dev",
+    "react": "pnpm -r --parallel --filter=./playground/react run dev"
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",
@@ -37,12 +43,15 @@
     "eslint-plugin-prettier": "^4.2.1",
     "exec-sh": "^0.4.0",
     "fs-extra": "^11.1.0",
+    "less": "^4.1.3",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.21",
     "prettier": "^2.8.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^3.9.1",
+    "rollup-plugin-dts": "^5.2.0",
+    "rollup-plugin-postcss": "^4.0.2",
     "terser": "^5.16.1",
     "tslib": "^2.4.1",
     "typescript": "^4.9.4",

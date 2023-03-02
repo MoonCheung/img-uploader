@@ -1,1 +1,1 @@
-export { ImgUploader } from './img-uploader'
+export { ImgUploader } from './component';

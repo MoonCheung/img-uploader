@@ -20,6 +20,7 @@
     /* Interop Constraints */
     "esModuleInterop": true,
     /* Type Checking */
-    "strict": true
+    "strict": true,
+    "strictNullChecks": false
   }
 }

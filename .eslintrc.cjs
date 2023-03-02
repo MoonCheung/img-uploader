@@ -1,11 +1,11 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
     es2021: true,
     node: true
   },
   extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended', 'prettier'],
-  overrides: [],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -15,6 +15,14 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['@typescript-eslint'],
+  overrides: [
+    {
+      files: ['packages/**/*.ts', 'packages/**/*.tsx'],
+      rules: {
+        '@typescript-eslint/no-empty-function': 0
+      }
+    }
+  ],
   rules: {
     /**
      * off 或 0：表示不验证规则。

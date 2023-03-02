@@ -1,18 +1,12 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <HelloWorld msg="自定义组件插件" />
+  <ImgUploader />
 </template>
+
+<script setup lang="ts">
+import { ImgUploader } from '../../../packages/vue/src/index';
+import HelloWorld from './components/HelloWorld.vue';
+</script>
 
 <style scoped>
 .logo {
