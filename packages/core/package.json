@@ -1,6 +1,6 @@
 {
   "name": "@img-uploader/core",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
   "description": "@img-uploader/core",
   "type": "module",

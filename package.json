@@ -1,6 +1,6 @@
 {
   "name": "img-uploader",
-  "private": false,
+  "private": true,
   "version": "1.0.0",
   "description": "Image type inputer or uploader",
   "type": "module",
@@ -78,5 +78,8 @@
   "homepage": "https://github.com/MoonCheung/img-uploader#readme",
   "engines": {
     "node": ">=14"
+  },
+  "dependencies": {
+    "vue-types": "^5.0.2"
   }
 }

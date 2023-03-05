@@ -1,6 +1,6 @@
 {
   "name": "@img-uploader/vue",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
   "description": "@img-uploader/vue",
   "type": "module",

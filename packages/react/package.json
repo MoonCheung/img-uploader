@@ -1,6 +1,6 @@
 {
   "name": "@img-uploader/react",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
   "description": "@img-uploader/react",
   "type": "module",
