@@ -1,5 +1,5 @@
 import type { Plugin, App } from 'vue';
-import Component from './component';
+import Component from './upload';
 
 export const ImgUploader = Component;
 export const install: Plugin = function (app: App) {
